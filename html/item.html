@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/stylesheet.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <title>Items</title>
+</head>
+
+<body>
+    <header class="p-2">
+        <nav class="navbar navbar-expand-lg navbar-light  ">
+            <div class="container">
+                <a class="navbar-brand text-light" href="#">SRA Pharmacy</a>
+                <ul class="navbar-nav ml-auto ">
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="#">Service</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link text-light dropdown-toggle" href="#" id="navbarDropdownMenuLink"
+                            role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Branches
+                        </a>
+                        <div class="dropdown-menu " aria-labelledby="navbarDropdownMenuLink" id="drop">
+                            <a class="dropdown-item text-light" href="#">Branch 1</a>
+                            <a class="dropdown-item text-light" href="#">Branch 2</a>
+                            <a class="dropdown-item text-light" href="#">Branch 3</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div class="divimg ">
+        <div class="container">
+            <div class="row">
+                <div class="col-ms-4 my-4 ">
+                    <video autoplay="true" id="videoElement">
+                    </video>
+                    <div class=" mt-3">
+                        <button onclick="capture()" class="btn  mar btnss" id="drop">Take Pic</button>
+                        <button onclick="takescreenshot()" class="btn  mar btnss" id="drop">Take Screen</button>
+                        <button onclick="stop()" class="btn  mar btnss" id="drop">Stop Video</button>
+                    </div>
+                    <canvas id="showscreenshot"></canvas>
+                </div>
+
+                <div class=" col-ms-8 mt-5">
+                    <form class="form1 mt-0">
+                        <div class="container mt-3">
+                            <div class="mb-3">
+                                <input type="text" size="15" id="item_picture" hidden="true">
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="exampleInputPassword1" class="form-label">Item_Name</label>
+                                <input type="text" class="form-control" id="itemname">
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleInputPassword1" class="form-label">Quantity</label>
+                                <input type="text" class="form-control" id="quantity">
+                            </div>
+                            <div class="btns">
+                                <button value="Submit" onclick="additem()" class="btn btnss" id="drop">Submit</button>
+                                <input type="button" value="Invoice" onclick="goto()" class="btn btnss" id="drop">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class=" text-light  p-2 mb-0">
+        <p class="text-center">Copyright 2021 All Rights Reserved by SRA Pharmacy</p>
+    </footer>
+    <script src="../js/item.js"></script>
+    <script src="../node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

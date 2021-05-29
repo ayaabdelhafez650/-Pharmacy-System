@@ -1,0 +1,74 @@
+
+header,footer,#drop{
+    background-color:#bd6621;
+}
+
+.divimg{
+    background-image: url('../img/bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.8;
+    height: 625px;
+    
+}
+
+form{
+    border-radius:10px;
+    position: absolute;
+    border-radius: 5px;
+    opacity: 1;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: bold;
+} 
+form label{
+    width: 55px;;
+    /* //margin-left: 15px; */
+    color:black
+    
+}
+
+
+button{
+    background-color: #bd6621;
+    border:0;
+    border-radius: 5px;
+
+}
+/* .btns  input[type="button"],.btnss,button{
+    /* width: 100px; */
+    /* font-weight: bold;    */
+/* }  */
+@media (max-width:500px){
+    div{
+        width: 100%;
+        margin-left:0px;
+
+    }
+    form{
+        margin-top: 5px;
+    }
+    .navbar{
+        width: 100%;
+        height: 100%;
+        /* float: left; */
+        /* line-height: 20px; */
+    }
+    .dropdown-item{
+        height: 25px;
+    }
+    .container{
+        width: 0px;
+        height: 50px;
+    }
+    video{
+        margin-top: 55px;
+    }
+    .btnss{
+        margin-left: 5px;
+    }
+    form .form1{
+        margin-top: 50px;
+    }
+}
